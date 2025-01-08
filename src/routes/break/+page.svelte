@@ -5,7 +5,7 @@
   import NumberFlow from '@number-flow/svelte';
 
   const MAX_ESC_HOLD_MS = 1000;
-  let seconds = 10;
+  let seconds = 20;
   let interval: number;
   let mounted = false;
   let escHoldStart: number | null = null;
