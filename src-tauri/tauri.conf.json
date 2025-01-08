@@ -28,13 +28,9 @@
         "incognito": true,
         "visibleOnAllWorkspaces": true,
 
-        "maximized": true,
+        "maximized": false,
         "resizable": true,
-        "devtools": true,
-
-        "windowEffects": {
-          "effects": []
-        }
+        "devtools": true
       }
     ],
     "macOSPrivateApi": true,

@@ -6,8 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tauri + SvelteKit + Typescript App</title>
     %sveltekit.head%
+    <style>
+      html,
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: 100%;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      body {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      html::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
   </head>
   <body data-sveltekit-preload-data="hover">
-    <div style="display: contents">%sveltekit.body%</div>
+    %sveltekit.body%
   </body>
 </html>
