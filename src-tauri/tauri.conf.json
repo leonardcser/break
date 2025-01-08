@@ -10,29 +10,7 @@
     "frontendDist": "../build"
   },
   "app": {
-    "windows": [
-      {
-        "title": "break",
-        "width": 1200,
-        "height": 800,
-        "center": true,
-        "minimizable": false,
-        "maximizable": false,
-        "decorations": false,
-        "shadow": false,
-        "hiddenTitle": true,
-        "alwaysOnTop": true,
-        "closable": false,
-        "transparent": true,
-        "dragDropEnabled": false,
-        "incognito": true,
-        "visibleOnAllWorkspaces": true,
-
-        "maximized": false,
-        "resizable": true,
-        "devtools": true
-      }
-    ],
+    "windows": [],
     "macOSPrivateApi": true,
     "security": {
       "csp": null
