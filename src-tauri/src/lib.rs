@@ -45,14 +45,9 @@ fn open_break(app: &tauri::AppHandle) {
 }
 
 fn start_break_timer(app_handle: tauri::AppHandle) {
-    // Spawn a new thread for the timer
-    std::thread::spawn(move || {
-        loop {
-            // Sleep for 20 minutes
-            std::thread::sleep(Duration::from_secs(20 * 60));
-            // Call open_break
-            open_break(&app_handle);
-        }
+    std::thread::spawn(move || loop {
+        std::thread::sleep(Duration::from_secs(20 * 60));
+        open_break(&app_handle);
     });
 }
 
