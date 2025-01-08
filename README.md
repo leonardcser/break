@@ -1,7 +1,5 @@
-# Tauri + SvelteKit + TypeScript
+# Break
 
-This template should help get you started developing with Tauri, SvelteKit and TypeScript in Vite.
+A simple menubar app that reminds you to take a small break.
 
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+![break](./assets/break.png)
