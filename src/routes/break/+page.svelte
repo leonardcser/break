@@ -69,9 +69,9 @@
     <h1>Break</h1>
     <small id="message">Rest your eyes for a bit</small>
     {#if escHoldStart === null}
-      <small id="note">Hold ESC to skip</small>
+      <small id="howToQuit">Hold ESC to skip</small>
     {:else}
-      <small id="note"> Skipping... </small>
+      <small id="howToQuit"> Skipping... </small>
     {/if}
     <div id="counter">
       <NumberFlow
@@ -93,6 +93,7 @@
     text-rendering: optimizeLegibility;
   }
   .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,31 +104,35 @@
     background: #000;
   }
   h1 {
-    margin: 0.4rem 0;
+    margin: 0.3rem 0;
     cursor: default;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 900;
-    background: linear-gradient(90deg, #242424 0%, #a3a3a3 50%);
+    background: linear-gradient(90deg, #a3a3a3 0%, #242424 90%);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
+    z-index: 10;
   }
   #message {
     cursor: default;
     font-size: 1.25rem;
     font-weight: 600;
+    z-index: 10;
   }
   #counter {
     margin-top: 1.5rem;
     font-size: 3rem;
     font-family: monospace;
     font-weight: 800;
+    z-index: 10;
   }
-  #note {
-    margin-top: 0.5rem;
+  #howToQuit {
+    margin-top: 0.6rem;
     color: #4e4e4e;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    z-index: 10;
   }
 </style>
